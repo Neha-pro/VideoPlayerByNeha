@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidyo.ai-frontend-assignment</title>
+</head>
+
+<body style="background-image: url('C:/Users/hp/Downloads/giphy.gif'); background-size: cover;">
+    <main id="app">
+
+
+
+        <div class="nine">
+            <h1>Video Player<span>By Neha</span></h1>
+          </div>
+
+
+
+        <div style="display:flex">
+
+
+            <section>
+                <canvas id="player" class="bg-red-300 w-196 h-148">
+                </canvas>
+                <br/>
+                <progress id="seekbar" value="0" max="196"></progress>
+            </section>
+
+            <div>
+                <section>
+                    <div class="card">
+                        <button id="input-video" type="button" style="height:50px; width:200px; border-radius:20px; background-color:white; color:black; font-weight:bold; margin:20px">Video Input</button>
+                        
+                        <input style="margin-top:20px" tab-index="-1" id="input-video" type="file" accept="video/*,.mp4" required>
+                        <span style="padding-left:5em">&nbsp;</span>
+                        
+                        <button id="input-subs" type="button" style="height:50px; width:200px; border-radius:20px; background-color:white; color:black; font-weight:bold; margin:20px">SRT Input</button>
+                        <input tab-index="-1" id="input-subs" style="display:none; height:50px; width:200px; border-radius:20px; background-color:white; color:black; font-weight:bold; margin:20px" type="file" accept=".srt" required>
+                    </div>
+                </section>
+                <section>
+                    <div class="card">
+                        <button id="play-pause" type="button" style="height:50px; width:200px; border-radius:20px; background-color:white; color:black; font-weight:bold; margin:20px">Play/Pause</button>
+                    </div>
+                </section>
+            </div>
+    </div>
+        
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
